@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        SURVEY REPORT
+        </title>
+        <link rel="stylesheet" href="style.css">    
+    </head>
+    <body>
+        <div class="heading">
+             <h1><center>CALCULATOR</center></h1>
+        </div>
+            
+            <div class="position">
+                <input class="text" type="text">
+        <table>
+            <tr>
+               <td> <button onclick="ram('/')" class="tab" >/</button></td>
+               <td> <button onclick="ram('*')" class="tab" >*</button></td>
+               <td> <button onclick="ram('-')" class="tab">-</button></td>
+               <td> <button onclick="ram('+')" class="tab">+</button></td>
+            </tr>
+            <tr>
+               <td> <button onclick="ram('%')" class="tab">%</button></td>
+               <td> <button onclick="sqrt()" class="tab">x^2</button></td>
+               <td> <button onclick="root()" class="tab">sqrt</button></td>
+               <td> <button onclick="cubsqrt()" class="tab">x^3</button></td>
+            </tr>
+            <tr>
+               <td> <button onclick="ram(9)" class="tab">9</button></td>
+               <td> <button onclick="ram(8)" class="tab">8</button></td>
+               <td> <button onclick="ram(7)" class="tab">7</button></td>
+               <td> <button onclick="ram(6)" class="tab">6</button></td>
+            </tr>
+            <tr>
+               <td> <button onclick="ram(5)" class="tab">5</button></td>
+               <td> <button onclick="ram(4)" class="tab">4</button></td>
+               <td> <button onclick="ram(3)" class="tab">3</button></td>
+               <td> <button onclick="ram(2)" class="tab">2</button></td>
+            </tr>
+            <tr>
+               <td> <button onclick="ram(1)" class="tab">1</button></td>
+               <td> <button onclick="ram(0)" class="tab">0</button></td>
+               <td> <button onclick="calculate()" class="tab">=</button></td>
+               <td> <button onclick="ram('.')" class="tab">.</button></td>
+               </tr>
+            <tr>
+                <td> <button onclick="clr()" class="tab2">clear</button></td>
+            </tr>
+            </table>
+        </div>
+    </body>
+    <script>
+        function ram(aa)
+        {
+            let v=document.getElementsByClassName('text')[0].value;
+            document.getElementsByClassName('text')[0].value=v+aa
+        }
+        function clr()
+        {
+            document.getElementsByClassName('text')[0].value=''
+        }
+        function calculate()
+        {
+            let v=document.getElementsByClassName('text')[0].value;
+            document.getElementsByClassName('text')[0].value=eval(v)
+        }
+        function root()
+        {
+            let v=document.getElementsByClassName('text')[0].value;
+            document.getElementsByClassName('text')[0].value=Math.sqrt(v)
+            
+        }
+        function sqrt()
+        {
+            let v=document.getElementsByClassName('text')[0].value;
+            document.getElementsByClassName('text')[0].value=(v*v)
+        }
+        function cubsqrt()
+        {
+            let v=document.getElementsByClassName('text')[0].value;
+            document.getElementsByClassName('text')[0].value=(v*v*v)
+        }
+    </script>
+</html>

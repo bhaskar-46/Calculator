@@ -1,0 +1,32 @@
+body{
+    background-color:black;
+}
+.heading{
+    color: red;
+}
+.tab{
+    padding: 20%;
+    margin: 10%;
+    width: 50px;
+    font-size: larger;
+    
+}
+
+.position{
+    margin-left: 43% ;
+}
+.text{
+    width: 202px;
+    margin-left: 8px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: larger;
+    text-align: right;
+}
+.tab2{
+    margin-left: 5px;
+    padding: 25%;
+    padding-left: 170%;
+    padding-right: 170%;
+    font-size: larger;
+}
